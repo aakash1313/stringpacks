@@ -14,12 +14,12 @@ public class StringPackIds {
     StringPacks.getInstance().register(getStringPacksMapping());
   }
 
+  // region StringPacks ID Map
   private static int[] getStringPacksMapping() {
-    return new int[]{
-            R.string.hello_second_fragment, 0,
-    };
+      return new int[]{
+          R.string.hello_second_fragment, 0,
+      };
   }
 
-  // region StringPacks ID Map
   // endregion
 }
