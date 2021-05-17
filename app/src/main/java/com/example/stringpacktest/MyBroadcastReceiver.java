@@ -8,6 +8,6 @@ import android.widget.Toast;
 public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "Broadcast Receiver Triggered", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "MyBroadcastReceiver Triggered", Toast.LENGTH_SHORT).show();
     }
 }

@@ -44,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 createWebviewApplicationContext();
 
-                Intent intent = new Intent();
+                Context context = getApplicationContext();
+                Intent intent = new Intent(context, MyBroadcastReceiver.class);
                 intent.addCategory(Intent.CATEGORY_DEFAULT);
                 intent.setAction("com.example.stringpacktest.customintent");
-                sendBroadcast(intent);
+                context.sendBroadcast(intent);
             }
         });
     }
