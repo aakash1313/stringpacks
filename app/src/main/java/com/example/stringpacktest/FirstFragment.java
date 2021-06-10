@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -36,6 +37,7 @@ public class FirstFragment extends Fragment {
                 getContext().sendBroadcast(intent);
             }
         });
+        ((Button)view.findViewById(R.id.button_another)).setText(getResources().getString(R.string.language_text));
     }
 
     public void createWebview() {

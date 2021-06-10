@@ -17,7 +17,9 @@ public class StringPackIds {
   // region StringPacks ID Map
   private static int[] getStringPacksMapping() {
       return new int[]{
-          R.string.hello_second_fragment, 0,
+          R.string.broacast_triggered, 0,
+          R.string.hello_second_fragment, 1,
+          R.string.language_text, 2,
       };
   }
 

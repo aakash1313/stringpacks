@@ -5,9 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.whatsapp.stringpacks.StringPacks;
+
 public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "MyBroadcastReceiver Triggered", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, context.getApplicationContext().getString(R.string.broacast_triggered), Toast.LENGTH_SHORT).show();
     }
 }
