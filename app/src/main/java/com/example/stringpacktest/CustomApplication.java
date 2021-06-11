@@ -18,6 +18,13 @@ public class CustomApplication extends Application {
     private StringPackResources stringPackResources;
 
     @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        StringPacks.getInstance().setUp(getApplicationContext());
+    }
+
+    @Override
     public Resources getResources() {
         if (stringPackResources == null) {
             stringPackResources = StringPackResources.wrap(super.getResources());
